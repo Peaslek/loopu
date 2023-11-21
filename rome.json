@@ -1,0 +1,26 @@
+{
+  "$schema": "./node_modules/rome/configuration_schema.json",
+  "organizeImports": {
+    "enabled": true
+  },
+  "files": {
+    "ignore": ["node_modules/*"]
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "correctness": {
+        "noUnusedVariables": "off"
+      },
+      "nursery": {
+        "all": false
+      },
+      "all": true
+    }
+  },
+  "formatter": {
+    "formatWithErrors": true,
+    "indentSize": 2,
+    "indentStyle": "space"
+  }
+}
